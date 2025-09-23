@@ -9,7 +9,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 section{
     padding: 100px 0;
 }
@@ -186,6 +185,27 @@ section .title::after{
     margin-top: 70px;
     border: 7px solid #005c9d;
     border-radius: 300px;
+}
+.dark-mode {
+  background: black;
+  color: #f1f1f1;
+}
+
+.dark-mode .navbar {
+  background: #000000;
+}
+
+.dark-mode .menu,
+.dark-mode .menu li a,
+.dark-mode .logo a,
+.dark-mode .title,
+.dark-mode .about-content,
+.dark-mode .gallery-content,
+.dark-mode .projects-content,
+.dark-mode .contact-content,
+.dark-mode footer {
+  background: transparent;
+  color: #f1f1f1;
 }
 
 .social-links {
