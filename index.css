@@ -145,7 +145,7 @@ section .title::after{
 
 .home{
     display: flex;
-    background: black;    
+    background: rgb(255, 255, 255);    
     height: 100vh;
     color: black;
     min-height: 500px;
@@ -162,7 +162,7 @@ section .title::after{
 }
 .home .home-content .text-1{
     font-size: 30px;
-    color: #fff;
+    color: #000000;
     margin-top: -200px;
 }
 .home .home-content .text-2{
@@ -174,7 +174,7 @@ section .title::after{
 .home .home-content .text-3{
     font-size: 30px;
     margin: 5px 0;
-    color: #fff;
+    color: #005c9d;
 }
 .home .home-content .text-3 span{
     color: #005c9d;
@@ -198,6 +198,7 @@ section .title::after{
   background: #000000;
 }
 .dark-mode .menu,
+.dark-mode.home,
 .dark-mode .about-content,
 .dark-mode .menu li a,
 .dark-mode .logo a,
@@ -213,7 +214,12 @@ section .title::after{
 .dark-mode .about-content {
     background: transparent !important;
 }
-
+.dark-mode .text-1 {
+    color: #ffffff !important;
+}
+.dark-mode .home {
+    background: #000000 !important;
+}
 .dark-mode .about .title::after {
     background: transparent !important;
 }
@@ -296,7 +302,10 @@ section .title::after{
 }
 .gallery{
     scroll-margin-top: 50px;
-    background: #005c9d;
+    background: #ffffff
+}
+.dark-mode .gallery{
+    background: black !important;
 }
 .gallery-card {
     overflow: hidden;
@@ -624,6 +633,7 @@ footer span a:hover{
       .home {
         height: 120vh;
       }
+      
     .navbar .menu {
         position: fixed;
         top: 60px;
@@ -640,13 +650,14 @@ footer span a:hover{
        .navbar .menu.active {
         left: 0;
       }
+    }
 .img1{
-    margin-left: 120px;
+    margin-left: 80px;
 }
       .menu-btn {
         display: block;
+        margin-right: -150px;
       }
-    }
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
