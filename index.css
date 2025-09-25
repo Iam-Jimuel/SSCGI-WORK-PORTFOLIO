@@ -650,7 +650,7 @@ footer span a:hover{
        .navbar .menu.active {
         left: 0;
       }
-    }
+      
 .img1{
     margin-left: 80px;
 }
@@ -658,6 +658,7 @@ footer span a:hover{
         display: block;
         margin-right: -150px;
       }
+    
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
