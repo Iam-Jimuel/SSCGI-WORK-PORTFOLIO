@@ -345,7 +345,7 @@ section .title::after{
 .project-card {
     background: #fff;
     width: 300px; 
-    height: 420px; 
+    height: 425px; 
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -382,7 +382,6 @@ section .title::after{
     margin-bottom: 15px;
 }
 
-/* Hover effect for 'View Details' links in project cards */
 .project-card a {
     display: inline-block;
     padding: 8px 20px;
