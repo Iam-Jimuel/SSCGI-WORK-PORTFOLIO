@@ -51,3 +51,15 @@ if (darkModeToggle) {
     }
   });
 }
+
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm('service_sc8ntsd', 'template_hcqzaw5', this)
+    .then(function() {
+      alert('Message sent successfully!');
+    }, function(error) {
+      alert('Failed to send message. Please try again.');
+    });
+});
