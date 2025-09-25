@@ -112,6 +112,7 @@ section .title::after{
       font-size: 25px;
       color: #fff;
       cursor: pointer;
+      margin-right: -250px;
     }
 .scroll-up-btn{
     position: fixed;
@@ -186,15 +187,16 @@ section .title::after{
     border: 7px solid #005c9d;
     border-radius: 300px;
 }
-.dark-mode {
+.dark-mode{
   background: black;
   color: #f1f1f1;
 }
-
+.dark-mode .sub-title {
+    color: #ffffff !important;
+}
 .dark-mode .navbar {
   background: #000000;
 }
-
 .dark-mode .menu,
 .dark-mode .menu li a,
 .dark-mode .logo a,
@@ -205,7 +207,7 @@ section .title::after{
 .dark-mode .contact-content,
 .dark-mode footer {
   background: transparent;
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 .social-links {
@@ -430,7 +432,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #000000;
 }
 .contact .right form .fields{
     display: flex;
