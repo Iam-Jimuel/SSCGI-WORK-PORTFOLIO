@@ -382,18 +382,25 @@ section .title::after{
     margin-bottom: 15px;
 }
 
+/* Hover effect for 'View Details' links in project cards */
 .project-card a {
     display: inline-block;
-    padding: 8px 16px;
-    background: #005c9d;;
+    padding: 8px 20px;
+    background: #005c9d;
     color: #fff;
+    border-radius: 20px;
     text-decoration: none;
-    border-radius: 6px;
-    transition: background 0.3s ease;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 .project-card a:hover {
-    background: #005c9d;;
+    background: #fff;
+    color: #005c9d;
+    border: 1px solid #005c9d;
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
 
 
